@@ -1,0 +1,13 @@
+{
+    "name": "simple_app",
+    "version": "1.0.0",
+    "description": "Simple app for signup and signin",
+    "main": "main.js",
+    "scripts": {
+      "start": "node main.js"
+    },
+    "dependencies": {
+      "bootstrap": "^5.3.0"
+    }
+  }
+  

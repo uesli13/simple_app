@@ -1,0 +1,48 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>All Posts</title>
+</head>
+<body>
+    <h1>All Posts</h1>
+    <form method="POST" action="/add_post">
+        <textarea name="text" rows="4" cols="50" placeholder="Write a new post..." required></textarea><br>
+        <button type="submit">Add Post</button>
+    </form>
+    <hr>
+    <ul>
+        {% for post in posts %}
+            <li>
+                <p><strong>{{ post.username }}</strong> wrote:</p>
+                <p>{{ post.text }}</p>
+                <small>Created at: {{ post.createdat }}</small>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="/logout">Sign Out</a>
+</body>
+</html>
+
+ -->
+
+ {% extends 'base.html' %}
+
+{% block content %}
+    <h1>All Posts</h1>
+    <form method="POST" action="/add_post">
+        <textarea name="text" rows="4" cols="50" placeholder="Write a new post..." required></textarea><br>
+        <button type="submit">Add Post</button>
+    </form>
+    <hr>
+    <ul>
+        {% for post in posts %}
+            <li>
+                <p><strong>{{ post.username }}</strong> wrote:</p>
+                <p>{{ post.text }}</p>
+                <small>Created at: {{ post.createdat }}</small>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="/logout">Sign Out</a>
+{% endblock %}
+
